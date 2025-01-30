@@ -13,7 +13,7 @@ const Header = () => {
         <p className="text-lg lg:text-xl mb-6">
           Providing the best dental care for kids with fun and comfort.
         </p>
-        <button className="cursor_toothbrush bg-white hover:bg-gradient-to-l hover:from-[#609fe7] hover:to-[#FFDD00] text-blue-600 px-6 py-3 hover:text-white rounded-lg text-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">
+        <button className="cursor_toothbrush bg-white hover:bg-gradient-to-l hover:from-[#609fe7] hover:` text-blue-600 px-6 py-3 hover:text-white rounded-lg text-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">
           Book an Appointment
         </button>
       </div>

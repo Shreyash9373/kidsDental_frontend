@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Happy+Monkey&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 @import 'tailwindcss';
+
 body {
   font-family: 'Happy Monkey', serif;
   font-weight: 400;
   font-style: normal;
+  cursor: url('/public/toothbrush_cursor.svg') 20 22, auto;
 }
+.bg-primary {
+  background: linear-gradient(to right, #6EC3F7, #f0efe5);
+}
+.heading-text{
+  color:#2563EB;
+}
+
+/* .cursor_toothbrush:hover{
+  
+} */
+
+

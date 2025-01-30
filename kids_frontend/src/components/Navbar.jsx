@@ -35,10 +35,10 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-white">
+    <nav className="flex items-center justify-between px-6  shadow-md bg-white bg-gradient-to-r bg-primary">
       {/* Logo Section */}
       {/* <div className="text-2xl font-bold text-blue-600">Kids Dental World</div> */}
-      <a href="/"><img src={logo} alt="logo" className=" w-24 h-24 border border-black rounded-full" /></a>
+      <img src={logo} alt="logo" className=" w-28 h-28  " />
 
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden">
@@ -61,7 +61,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/"
-            className={`hover:text-gray-200 font-bold ${isActive('/') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🦷 Home
           </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/dentalServices"
-            className={`hover:text-gray-200 font-bold ${isActive('/dentalServices') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/dentalServices') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🪥Services
           </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/About"
-            className={`hover:text-gray-200 font-bold ${isActive('/About') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/About') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🦸About
           </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/Contact"
-            className={`hover:text-gray-200 font-bold ${isActive('/Contact') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/Contact') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             📍Contact
           </Link>
@@ -93,9 +93,9 @@ const Navbar = () => {
       </ul>
 
       <div
-        className={`fixed top-0 left-0 h-screen bg-white text-black z-[9999] transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 shadow-lg`}
+        className={`fixed top-0 left-0 h-screen bg-gradient-to-t from-[#6EC3F7] to-[#FFD700] via-white via:40%  text-black z-[9999] transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 shadow-lg `}
       >
-        <div className="flex justify-between items-center px-6 py-4 border-b bg-[#3E79F3]">
+        <div className="flex justify-between items-center px-6 py-4 border-b bg-gradient-to-l from-[#6EC3F7] to-[#FFD700] ">
           <h2 className="text-xl font-bold text-white">Menu</h2>
           <button className="text-white focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -112,7 +112,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Links */}
-        <ul className="mt-4 space-y-6 px-6 text-lg font-semibold">
+        <ul className="mt-4 space-y-6 px-6 text-lg font-semibold ">
           <li>
             <Link
               to="/"

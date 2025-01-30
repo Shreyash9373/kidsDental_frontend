@@ -4,7 +4,7 @@ import headerImage from "../assets/header_img.jpeg";
 
 const Header = () => {
   return (
-    <header className=" flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 lg:px-20 bg-gradient-to-r from-[#6EC3F7] to-[#FFD700] text-white">
+    <header className=" flex flex-col-reverse lg:flex-row items-center justify-between px-6 py-12 lg:py-20 lg:px-20 bg-primary text-white">
       {/* Left Section - Text & Button */}
       <div className="text-center lg:text-left lg:w-1/2">
         <h1 className="text-3xl mt-4 lg:text-5xl font-bold mb-6">

@@ -53,7 +53,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="container mx-auto px-4 py-10 bg-primary">
+    <div className="container px-4 py-10 min-w-full bg-primary">
       <h2 className="heading-text text-3xl font-bold text-center mb-16">
         Our Services
       </h2>

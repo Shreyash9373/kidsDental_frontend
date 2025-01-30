@@ -1,7 +1,7 @@
 import React from 'react';
-
+import Services from '../components/Services';
 const DentalServices = () => {
-  return <div>dentalServices</div>;
+  return <div><Services/></div>;
 };
 
 export default DentalServices;

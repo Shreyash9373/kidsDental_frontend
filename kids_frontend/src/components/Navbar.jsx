@@ -35,7 +35,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="flex items-center justify-between px-6  shadow-md bg-white bg-gradient-to-r  from-[#6EC3F7] to-[#FFD700]">
+    <nav className="flex items-center justify-between px-6  shadow-md bg-white bg-gradient-to-r bg-primary">
       {/* Logo Section */}
       {/* <div className="text-2xl font-bold text-blue-600">Kids Dental World</div> */}
       <img src={logo} alt="logo" className=" w-28 h-28  " />
@@ -61,7 +61,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/"
-            className={`cursor_toothbrush hover:text-gray-200 font-bold ${isActive('/') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🦷 Home
           </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/dentalServices"
-            className={`cursor_toothbrush hover:text-gray-200 font-bold ${isActive('/dentalServices') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/dentalServices') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🪥Services
           </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/About"
-            className={`cursor_toothbrush hover:text-gray-200 font-bold ${isActive('/About') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/About') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             🦸About
           </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
         <li>
           <Link
             to="/Contact"
-            className={`cursor_toothbrush hover:text-gray-200 font-bold ${isActive('/Contact') ? 'text-black font-bold' : 'text-gray-200'}`}
+            className={`cursor_toothbrush hover:text-gray-400 font-bold ${isActive('/Contact') ? 'text-black font-bold' : 'text-gray-500'}`}
           >
             📍Contact
           </Link>

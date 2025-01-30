@@ -1,7 +1,12 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
-  return <div>Home page</div>;
+  return (
+    <div>
+      <Testimonials/>
+    </div>
+  )
 };
 
 export default Home;

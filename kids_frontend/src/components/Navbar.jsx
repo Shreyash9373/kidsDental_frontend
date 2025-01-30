@@ -38,7 +38,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-white">
       {/* Logo Section */}
       {/* <div className="text-2xl font-bold text-blue-600">Kids Dental World</div> */}
-      <img src={logo} alt="logo" className=" w-24 h-24 border border-black rounded-full" />
+      <a href="/"><img src={logo} alt="logo" className=" w-24 h-24 border border-black rounded-full" /></a>
 
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden">

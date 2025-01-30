@@ -53,7 +53,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="container mx-auto px-4 py-10 bg-primary">
+    <div className="container min-w-full py-10 bg-primary">
       <h2 className="heading-text text-3xl font-bold text-center mb-16">
         Our Services
       </h2>
@@ -63,8 +63,7 @@ const Services = () => {
         {servicesData.map((service) => (
           <div key={service.id} className="min-w-xs mx-auto group relative cursor-pointer">
             {/* Main Card */}
-            <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl h-96 
-        transform origin-bottom-right perspective-[500px] group-hover:rotate-3">
+            <div className="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl h-96 transform origin-bottom-right perspective-[500px] group-hover:rotate-3">
               {/* Visible Content */}
               <div className="relative h-full">
                 {/* Text Container - Hidden on hover */}

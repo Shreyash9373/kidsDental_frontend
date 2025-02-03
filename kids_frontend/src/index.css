@@ -8,7 +8,7 @@ body {
   cursor: url('/public/toothbrush_cursor.svg') 20 22, auto;
 }
 .bg-primary {
-  background: linear-gradient(to right, #6EC3F7, #eee5f0);
+  background: linear-gradient(to right, #6EC3F7, #f0efe5);
 }
 .heading-text{
   color:#2563EB;

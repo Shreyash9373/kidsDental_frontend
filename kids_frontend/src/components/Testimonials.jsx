@@ -51,9 +51,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-12 px-4 sm:px-8 lg:px-20 mb-10">
+    <div className="bg-primary py-12 px-4 sm:px-8 lg:px-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-semibold text-teal-600 mb-8 text-center">What Our Patients Say</h2>
+        <h2 className="text-4xl font-semibold heading-text mb-8 text-center">What Our Patients Say</h2>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
@@ -74,10 +74,10 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="bg-white p-6 rounded-lg duration-200 h-80 flex flex-col border-2 border-teal-600">
+              <div className="bg-white p-6 rounded-lg duration-200 h-80 flex flex-col">
                 <div className="flex items-center gap-4 mb-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-teal-600">{testimonial.name}</h3>
+                    <h3 className="text-xl font-semibold heading-text">{testimonial.name}</h3>
                     <p className="text-sm text-gray-500">{testimonial.role}</p>
                   </div>
                 </div>

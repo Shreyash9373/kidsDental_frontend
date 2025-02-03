@@ -1,8 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-
 import { Link, useLocation } from 'react-router-dom';
-
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -35,10 +33,13 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="flex items-center justify-between px-6  shadow-md bg-white bg-gradient-to-r bg-primary">
+    <nav
+      className={`sticky top-0 left-0 w-full z-50 flex items-center justify-between px-6 bg-white bg-gradient-to-r bg-primary transition-all duration-300 ${isScrolled ? 'shadow-xl' : ''}`}
+    >
       {/* Logo Section */}
-      {/* <div className="text-2xl font-bold text-blue-600">Kids Dental World</div> */}
-      <a href="/"><img src={logo} alt="logo" className=" w-28 h-28"/></a>
+      <a href="/">
+        <img src={logo} alt="logo" className="w-28 h-28" />
+      </a>
 
       {/* Hamburger Icon for Mobile */}
       <div className="lg:hidden">
@@ -92,10 +93,11 @@ const Navbar = () => {
         </li>
       </ul>
 
+      {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 h-screen bg-gradient-to-t from-[#6EC3F7] to-[#FFD700] via-white via:40%  text-black z-[9999] transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 shadow-lg `}
+        className={`fixed top-0 left-0 h-screen bg-primary text-black z-[9999] transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 shadow-lg`}
       >
-        <div className="flex justify-between items-center px-6 py-4 border-b bg-gradient-to-l from-[#6EC3F7] to-[#FFD700] ">
+        <div className="flex justify-between items-center px-6 py-4 border-b bg-primary">
           <h2 className="text-xl font-bold text-white">Menu</h2>
           <button className="text-white focus:outline-none" onClick={toggleMobileMenu}>
             <svg
@@ -112,7 +114,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Links */}
-        <ul className="mt-4 space-y-6 px-6 text-lg font-semibold ">
+        <ul className="mt-4 space-y-6 px-6 text-lg font-semibold bg-primary">
           <li>
             <Link
               to="/"

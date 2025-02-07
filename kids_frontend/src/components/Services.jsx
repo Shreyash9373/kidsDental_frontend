@@ -53,7 +53,10 @@ const Services = () => {
     },
   ];
   return (
+
+
     <div className="container min-w-full py-10 bg-primary">
+
       <h2 className="heading-text text-3xl font-bold text-center mb-16">
         Our Services
       </h2>

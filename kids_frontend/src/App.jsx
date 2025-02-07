@@ -8,6 +8,7 @@ import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import DentalServices from './pages/DentalServices.jsx';
 import Home from './pages/Home.jsx';
+import Services from './components/Services.jsx';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element   ={<Home />} />
         <Route path="/dentalServices" element={<DentalServices />} />
+        <Route path="/Services" element={<Services />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>

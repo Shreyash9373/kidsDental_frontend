@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div className="bg-primary text-gray-600 py-12 px-4 sm:px-8 lg:px-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-semibold heading-text mb-8 text-center">Contact Us</h2>
+        {/* <h2 className="text-4xl font-semibold heading-text mb-8 text-center">Contact Us</h2> */}
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           {/* Left Side: Contact Information */}
           <div className="flex-1 mb-8 lg:mb-0 bg-white p-8 rounded-lg shadow-lg">
@@ -40,6 +40,7 @@ const Contact = () => {
 
           {/* Right Side: Contact Form */}
           <div className="flex-1 max-w-2xl bg-white p-8 rounded-lg shadow-lg">
+          <h2 className="text-4xl font-semibold heading-text mb-8 text-center">Contact Us</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Name Field */}
               <div>

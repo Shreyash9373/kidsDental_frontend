@@ -152,7 +152,7 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <div className="flex-1 max-w-xs mb-8 lg:mb-0">
-            <h4 className="text-3xl font-semibold text-teal-600 mb-4">Follow Us</h4>
+            <h4 className="text-3xl font-semibold heading-text mb-4">Follow Us</h4>
             <div className="flex space-x-6">
               <a
                 href="https://facebook.com"
@@ -183,7 +183,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="text-center text-sm mt-10 border-t border-gray-500 pt-6">
+        <div className="text-center text-sm mt-10 border-t-2 border-gray-500 pt-6">
           <p className="text-xl">Copyright &copy; 2025. <span className="text-[#2563EB] font-semibold">Kids Dental World</span>. All rights reserved. Developed by Peakprosys Solutions Pvt. Ltd. .</p>
         </div>
       </div>

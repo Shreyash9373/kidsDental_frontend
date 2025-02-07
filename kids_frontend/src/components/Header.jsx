@@ -8,14 +8,14 @@ const Header = () => {
       {/* Left Section - Text & Button */}
       <div className="text-center lg:text-left lg:w-1/2">
         <h1 className="text-3xl mt-4 lg:text-5xl font-bold mb-6">
-          Where Smiles Shine Bright! ✨
+          Where Smiles Shine Bright!✨
         </h1>
         <p className="text-lg lg:text-xl mb-6">
           Providing the best dental care for kids with fun and comfort.
         </p>
-        <button className="cursor_toothbrush bg-white hover:bg-gradient-to-l hover:from-[#609fe7] hover:` text-blue-600 px-6 py-3 hover:text-white rounded-lg text-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">
-          Book an Appointment
-        </button>
+        <a href="/contact"><button className="cursor_toothbrush bg-white hover:bg-gradient-to-l hover:from-[#609fe7] hover:` text-blue-600 px-6 py-3 hover:text-gray-700 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-100 transition duration-300">
+          Get in touch to book an Appointment
+        </button></a>
       </div>
 
       {/* Right Section - Animated Image */}
